@@ -1,0 +1,50 @@
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Cadastro Usuário</title>
+</head>
+<body>
+
+<h1>Nosso Formulário de Clientes:</h1>
+<br/>
+
+<form action="ClienteController" method= "POST">
+
+	<label id= "Label-1" for= "nome"><b>Nome:</b> </label>
+	<input type= "text" name="nome" id="nome"/>
+	<br/>
+	<label id= "Label-2" for= "cpf"><b>CPF:</b> </label>
+	<input type= "text" name="cpf" id="cpf"/>
+	<br/>
+	<label id= "Label-3" for= "email"><b>E-mail:</b> </label>
+	<input type= "text" name="email" id="email"/>
+	<br/>
+	<label id= "Label-4" for= "datanascimento"><b>Data de Nascimento:</b> </label>
+	<input type= "text" name="datanascimento" id="datanascimento"/>
+	<br/>
+	<label id= "Label-5" for= "sexo"><b>Sexo:</b> </label>
+	<input type="radio" id="masculino" name="sexo" value="masculino">
+	<label for="Masculino"><i>Masculino</i></label>
+	<input type="radio" id="feminino" name="sexo" value="feminino">
+	<label for="feminino"><i>Feminino</i></label>
+	<input type="radio" id="outros" name="sexo" value="outros">
+	<label for="outros"><i>Outros</i></label>
+	<br/>
+	<label id= "Label-6" for= "nomesocial"><b>Nome Social:</b> </label>
+	<input type= "text" name="nomesocial" id="nomesocial"/>
+	<br/>
+	<label id= "Label-7" for= "apelido"><b>Apelido:</b> </label>
+	<input type= "text" name="apelido" id="apelido"/>
+	<br/>
+	<label id= "Label-8" for= "telefone"><b>Telefone:</b> </label>
+	<input type= "tel" name="telefone" id="telefone"/>
+	<br/>
+	<input type="submit" value="salvar">
+
+
+</form>
+
+<a href="Principal.html"> <button >Voltar</button> </a>
+
+</body>
+</html>

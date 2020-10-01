@@ -38,6 +38,11 @@ public class ClienteController extends HttpServlet {
 			cliente.setNome(request.getParameter("nome"));
 			cliente.setCpf(request.getParameter("cpf"));
 			cliente.setEmail(request.getParameter("email"));
+			cliente.setDataNascimento(request.getParameter("dataNascimento"));
+			cliente.setSexo(request.getParameter("sexo"));
+			cliente.setNomesocial(request.getParameter("nomesocial"));
+			cliente.setApelido(request.getParameter("apelido"));
+			cliente.setTelefone(request.getParameter("telefone"));
 
 			try {
 				// Salva os dados
@@ -130,6 +135,11 @@ public class ClienteController extends HttpServlet {
 			cliente.setCpf(request.getParameter("cpf"));
 			cliente.setNome(request.getParameter("nome"));
 			cliente.setEmail(request.getParameter("email"));
+			cliente.setDataNascimento(request.getParameter("dataNascimento"));
+			cliente.setSexo(request.getParameter("sexo"));
+			cliente.setNomesocial(request.getParameter("nomesocial"));
+			cliente.setApelido(request.getParameter("apelido"));
+			cliente.setTelefone(request.getParameter("telefone"));
 
 			try {
 				Cliente atualiza = new RNClienteAlterar().atualizar(cliente);
